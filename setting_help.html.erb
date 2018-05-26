@@ -1,0 +1,45 @@
+<div>
+  <ul class="breadcrumb">
+    <li><%= link_to 'Settings',setting_index_path %></li>
+ </ul>
+</div>
+<div class="row">
+  <div class="box col-md-12">
+  <div class="box-inner">
+    <div class="box-header well">
+      <h2>How To Use: Settigs</h2>
+    </div>
+    
+    <div class="box-content" style="overflow-y: scroll; height:auto">
+  </br>
+
+<ul style="list-style-type:square">
+  	<li><b><%=link_to "General Setting : ", new_general_setting_path%></b></li>
+  	<p><%="User should be set the necessary options of general settings before using the application."%>
+  	</p>
+    <p><%="Eg. School/College Name, Phone No. ,Upload Logo etc."%></p>
+    
+    <li><b><%=link_to "Manage Student Category :",categories_path%></b></li>
+    <p><%="You can create student categories which under student can be enrolled into the institute" %></p>
+    <p><%="Eg. General,OBC,SC etc."%></p>
+    
+    <li><b><%=link_to "Manage Course/Batch :",course_batch_setting_index_path%></b></li>
+     
+    <ul><li><b><%=link_to "Manage Course :",courses_path%></b></li>
+      <p><%="You can create new course and initial batch for academic year"%></p>
+      <p><%="Eg. Course: Computer Engineering., MBA etc."%></p>
+      <p><%="Eg. Batch: August 2013"%></p>
+    
+    <li><b><%=link_to "Manage Batch :",batches_path%></b></li>
+     <p><%="You can create multiple batches under specific course"%></p>
+      <p><%="Eg. Batch: August 2014,Similarly August 2015. which can be created under course: Computer Engineering etc."%></p>
+     </ul>
+     
+     <li><b><%=link_to "Manage Subject :",subjects_path%></b></li>
+    <p><%="Admin user can add normal subjects or elective subjects for specific batch"%></p>
+    <p><%="Eg. Comupter Graphics, System Programing etc."%></p>
+  </ul>
+</div> 
+</div>
+</div>
+</div>

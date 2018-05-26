@@ -1,0 +1,57 @@
+<div>
+  <ul class="breadcrumb">
+    <li><%= link_to 'Home',dashboard_home_index_path %></li>
+    <li><%= link_to 'setting',setting_index_path %></li>
+    <li>Manage database</li>
+  </ul>
+</div>
+
+<div class="row">
+  <div class="box col-md-1"></div>
+  <div class="box col-md-4">
+    <div class="box-inner2">
+      <div class="box-header well" data-original-title="">
+        <h2><%= link_to "Empty Database",empty_setting_index_path %></h2>
+      </div>
+      <div class="box-content">
+        Generate the empty database.
+      </div>
+    </div>
+  </div>
+  <div class="box col-md-1"></div>
+  <div class="box col-md-4">
+    <div class="box-inner2">
+      <div class="box-header well" data-original-title="">
+        <h2><%= link_to "User Database", user_setting_index_path%></h2>
+      </div>
+      <div class="box-content">
+        Generate the database with superadmin,amardeep,anuja,rohit and ravikiran user.
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="box col-md-1"></div>
+  <div class="box col-md-4">
+    <div class="box-inner2">
+      <div class="box-header well" data-original-title="">
+        <h2><%= link_to "Full Database", full_setting_index_path%></h2> 
+      </div>
+      <div class="box-content">
+        Generate the database with all module with two student and two employee.
+      </div>
+    </div>
+  </div>
+  <div class="box col-md-1"></div>
+  <div class="box col-md-4">
+    <div class="box-inner2">
+      <div class="box-header well" data-original-title="">
+        <h2><%= link_to "Drop Database", drop_database_setting_index_path%></h2>
+      </div>
+      <div class="box-content">
+        Destroy database.
+      </div>
+    </div>
+  </div>
+</div>
